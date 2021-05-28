@@ -13,6 +13,6 @@ namespace PaymentAPI.Models
 
         }
 
-        public DbSet<PaymentDetail> PaymentDetails { get; set; }
+        public virtual DbSet<PaymentDetail> PaymentDetails { get; set; }
     }
 }

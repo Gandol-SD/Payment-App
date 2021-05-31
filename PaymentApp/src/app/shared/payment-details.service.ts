@@ -10,7 +10,7 @@ export class PaymentDetailsService {
   readonly baseUrl:string = "http://localhost:9863/api/PaymentDetails";
 
   constructor(private http:HttpClient) { }
-  postPaymentDetails(){
+  postPaymentDetail(){
     return this.http.post(this.baseUrl, this.formData)
   }
 }

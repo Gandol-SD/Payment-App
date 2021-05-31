@@ -28,6 +28,7 @@ namespace PaymentAPI
             services.AddDbContext<PaymentAPI.Models.PaymentDetailContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DevConnection"))
                 );
+            services.AddControllers();
             services.AddCors();
         }
 
